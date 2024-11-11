@@ -34,9 +34,9 @@ void displayBoard() {
             cout << "-----" << endl;
         }
     }
-}
-
-// Function to check for a win condition
+  
+  
+  // Function to check for a win condition
 bool checkWin(char player) {
     for (int i = 0; i < 3; ++i) {
         if (board[i][0] == player && board[i][1] == player && board[i][2] == player) {
@@ -54,3 +54,10 @@ bool checkWin(char player) {
     }
     return false;
 }
+
+
+// Function to switch players
+char switchPlayer(char currentPlayer) {
+    return (currentPlayer == 'X') ? 'O' : 'X';
+    }
+    
